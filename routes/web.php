@@ -2,15 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 use App\Http\Controllers\Api\User\UserListController;
 use App\Http\Controllers\Api\User\UserCreateController;
 use App\Http\Controllers\Api\User\UserEditController;
 use App\Http\Controllers\Api\User\UserDeleteController;
 use App\Http\Controllers\Auth\LoginController;
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 //Auth routes
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
