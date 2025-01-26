@@ -9,6 +9,17 @@
 </head>
 
 <body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">User Management</h1>
+            @auth
+            <form action="{{ route('logout') }}" method="POST" class="inline">
+                @csrf
+                <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded">Logout</button>
+            </form>
+            @endauth
+        </div>
+    </header>
     <!-- Notification Section -->
     @if (session('notify'))
     <div
