@@ -17,7 +17,9 @@
         </div>
         <div class="mb-4">
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Login</button>
+            <a href="{{ route('register') }}" class="inline-block bg-green-500 text-white px-4 py-2 rounded text-center">Register</a>
         </div>
+
         @if ($errors->any())
         <div class="text-red-500">
             <ul>
