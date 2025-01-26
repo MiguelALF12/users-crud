@@ -105,4 +105,10 @@ Sigue estos pasos para configurar el proyecto localmente:
   ```bash
    php artisan key:generate
   ```
+## Imagenes del proyecto
+### Home
+![Captura de Pantalla 2025-01-26 a la(s) 6 04 04 p m](https://github.com/user-attachments/assets/9194d58b-efce-4a52-a7ef-6ec452fc5f0c)
+### Despues del Login, Listado de usuarios
+![Captura de Pantalla 2025-01-26 a la(s) 6 04 34 p m](https://github.com/user-attachments/assets/bf741121-88d1-4423-ad44-9f9df8e96937)
+
 
