@@ -101,4 +101,8 @@ Sigue estos pasos para configurar el proyecto localmente:
   ```bash
   npm run dev
   ```
+- Si al ejecutar por primera vez te aparece el error de `No application encryption key has been specified`, debes parar la ejecución y utilizar este comando:
+  ```bash
+   php artisan key:generate
+  ```
 
