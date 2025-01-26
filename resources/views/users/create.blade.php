@@ -13,7 +13,7 @@
             <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md" required>
         </div>
         <div class="mb-4">
-            <label for="lastname" class="block text-sm font-medium text-gray-700">lastname</label>
+            <label for="lastname" class="block text-sm font-medium text-gray-700">Lastname</label>
             <input type="text" id="lastname" name="lastname" class="mt-1 block w-full border-gray-300 rounded-md" required>
         </div>
         <div class="mb-4">
