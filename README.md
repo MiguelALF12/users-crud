@@ -63,7 +63,7 @@ Sigue estos pasos para configurar el proyecto localmente:
    ```bash
    php artisan migrate
    ```
-
+    - Se te pedirá si deseas crear la base de datos, indicale que sí a menos que la crees manualmente.
 7. **Ejecutar el servidor de desarrollo:**
    Inicia el servidor de desarrollo, las colas y otras tareas con el siguiente comando:
 
