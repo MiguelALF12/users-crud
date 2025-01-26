@@ -1,6 +1,6 @@
 # Proyecto de Gestión de Usuarios
 
-> Este proyecto es una prueba tecnica para la empresa UNBC ltda.
+> Este proyecto es una prueba tecnica para la empresa UNBC.
 
 Aplicación de gestión de usuarios construida con Laravel. Proporciona funcionalidades para registrar, iniciar sesión y gestionar un CRUD completo de usuarios.
 
