@@ -105,6 +105,9 @@ Sigue estos pasos para configurar el proyecto localmente:
   ```bash
    php artisan key:generate
   ```
+- Al iniciar, es necesario que te registres primero ya que no hay registros existentes en la base de datos.
+
+  
 ## Imagenes del proyecto
 ### Home
 ![Captura de Pantalla 2025-01-26 a la(s) 6 04 04 p m](https://github.com/user-attachments/assets/9194d58b-efce-4a52-a7ef-6ec452fc5f0c)
