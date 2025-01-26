@@ -17,35 +17,37 @@
     @if($users->isEmpty())
     <p class="text-gray-600">No users found. Add a new user to get started!</p>
     @else
-    <table class="table-auto w-full border border-gray-200 bg-white rounded-lg">
-        <thead class="bg-gray-100">
-            <tr>
-                <th class="px-4 py-2">Name</th>
-                <th class="px-4 py-2">Surname</th>
-                <th class="px-4 py-2">Email</th>
-                <th class="px-4 py-2">Phone</th>
-                <th class="px-4 py-2">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($users as $user)
-            <tr class="border-t border-gray-200">
-                <td class="px-4 py-2">{{ $user->name }}</td>
-                <td class="px-4 py-2">{{ $user->last_name }}</td>
-                <td class="px-4 py-2">{{ $user->email }}</td>
-                <td class="px-4 py-2">{{ $user->phone_number }}</td>
-                <td class="px-4 py-2">
-                    <a href="{{ route('users.edit', $user->id) }}" class="bg-yellow-500 text-white px-2 py-1 rounded">Edit</a>
-                    <form action="{{ route('users.destroy', $user) }}" method="POST" class="inline-block">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="bg-red-500 text-white px-2 py-1 rounded" onclick="return confirm('Are you sure?')">Delete</button>
-                    </form>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="overflow-x-auto">
+        <table class="table-auto w-full border border-gray-200 bg-white rounded-lg">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Surname</th>
+                    <th class="px-4 py-2">Email</th>
+                    <th class="px-4 py-2">Phone</th>
+                    <th class="px-4 py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($users as $user)
+                <tr class="border-t border-gray-200">
+                    <td class="px-4 py-2 whitespace-nowrap">{{ $user->name }}</td>
+                    <td class="px-4 py-2 whitespace-nowrap">{{ $user->last_name }}</td>
+                    <td class="px-4 py-2 whitespace-nowrap">{{ $user->email }}</td>
+                    <td class="px-4 py-2 whitespace-nowrap">{{ $user->phone_number }}</td>
+                    <td class="px-4 py-2 whitespace-nowrap">
+                        <a href="{{ route('users.edit', $user->id) }}" class="bg-yellow-500 text-white px-2 py-1 inline-block rounded">Edit</a>
+                        <form action="{{ route('users.destroy', $user) }}" method="POST" class="inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="bg-red-500 text-white px-2 py-1 rounded" onclick="return confirm('Are you sure?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
     @endif
 </div>
 @endsection
