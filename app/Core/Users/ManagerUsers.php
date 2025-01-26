@@ -33,7 +33,9 @@ class ManagerUsers
     {
         // Logic to delete a user
         $user = User::find($userId);
-        $user->delete();
+        $userDeleted =  $user->delete();
+
+        return $userDeleted;
     }
 
     public function updateUser($userData)
