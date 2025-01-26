@@ -4,13 +4,7 @@ namespace App\Core\Users;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-/*
-|--------------------------------------------------------------------------
-| ManagerUsers
-|--------------------------------------------------------------------------
-|
-| Permite definir la logica a utilizar dentro de los controladores conectando los metodos del modelo User
-*/
+
 
 class ManagerUsers
 {
@@ -31,7 +25,6 @@ class ManagerUsers
 
     public function deleteUser($userId)
     {
-        // Logic to delete a user
         $user = User::find($userId);
         $userDeleted =  $user->delete();
 
@@ -40,8 +33,6 @@ class ManagerUsers
 
     public function updateUser($userData)
     {
-        // Logic to update a user
-        // Example: User::where('id', $userId)->update($userData);
         $user = User::find($userData['id']);
         $user->name = $userData['name'];
         $user->last_name = $userData['lastname'];
